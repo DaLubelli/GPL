@@ -1,0 +1,169 @@
+{
+	"name": "Foglio evento 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 232650207388760
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-position",
+					"objectClass": "Fogs",
+					"sid": 669490045828478,
+					"behaviorType": "MuoviVerso",
+					"parameters": {
+						"x": "918",
+						"y": "264",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Fogs2",
+					"sid": 739175200955426,
+					"behaviorType": "MuoviVerso",
+					"parameters": {
+						"x": "1040",
+						"y": "264",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Leaf",
+					"sid": 539499390671481,
+					"behaviorType": "MuoviVerso",
+					"parameters": {
+						"x": "2000000",
+						"y": "250",
+						"mode": "direct"
+					}
+				},
+				{
+					"id": "set-movement",
+					"objectClass": "Leaf",
+					"sid": 618957009057310,
+					"behaviorType": "Seno",
+					"parameters": {
+						"movement": "angle"
+					}
+				}
+			],
+			"sid": 476494742895335
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Fogs",
+					"sid": 276843905628689,
+					"parameters": {
+						"comparison": 5,
+						"x-co-ordinate": "918"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Fogs",
+					"sid": 137510189890664,
+					"parameters": {
+						"x": "-103"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Fogs",
+					"sid": 171119174935323,
+					"behaviorType": "MuoviVerso",
+					"parameters": {
+						"x": "918",
+						"y": "264",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 407678357171225
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Fogs2",
+					"sid": 754541885444134,
+					"parameters": {
+						"comparison": 5,
+						"x-co-ordinate": "1040"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Fogs2",
+					"sid": 824073982855173,
+					"parameters": {
+						"x": "19"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Fogs2",
+					"sid": 532027877696384,
+					"behaviorType": "MuoviVerso",
+					"parameters": {
+						"x": "1040",
+						"y": "264",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 750182020057517
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Leaf",
+					"sid": 951122389954129,
+					"parameters": {
+						"comparison": 5,
+						"x-co-ordinate": "900"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Leaf",
+					"sid": 539584547632939,
+					"parameters": {
+						"x": "-100"
+					}
+				},
+				{
+					"id": "move-to-position",
+					"objectClass": "Leaf",
+					"sid": 139905138643632,
+					"behaviorType": "MuoviVerso",
+					"parameters": {
+						"x": "2000000",
+						"y": "250",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 664943246569180
+		}
+	],
+	"sid": 886950581682941
+}

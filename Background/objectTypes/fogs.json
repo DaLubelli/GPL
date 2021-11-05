@@ -1,0 +1,43 @@
+{
+	"name": "Fogs",
+	"plugin-id": "Sprite",
+	"sid": 438763571041598,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MuoviVerso",
+			"sid": 360002321233946
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1620,
+						"height": 500,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 529114,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 533757295631251,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
