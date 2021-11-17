@@ -1,0 +1,609 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-moved",
+					"objectClass": "MainCharacter",
+					"sid": 196985587366455,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 626712019079339,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 497388524585310
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-stopped",
+					"objectClass": "MainCharacter",
+					"sid": 598448465819589,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 178695695800001,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 304708563763466
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 672859444364128,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 411187839665773,
+					"parameters": {
+						"animation": "\"Turn\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "MainCharacter",
+					"sid": 478156636788292,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 723913217254280
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 936586072987750,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 863068261283315,
+					"parameters": {
+						"animation": "\"Turn 2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-mirrored",
+					"objectClass": "MainCharacter",
+					"sid": 989047505960165,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 791891397386427
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "MainCharacter",
+					"sid": 171276182919254,
+					"parameters": {
+						"animation": "\"Turn\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "MainCharacter",
+					"sid": 768866919086375,
+					"parameters": {
+						"state": "mirrored"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 821310647200092,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 782196721446014
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "MainCharacter",
+					"sid": 573437617683407,
+					"parameters": {
+						"animation": "\"Turn 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "MainCharacter",
+					"sid": 459055931967541,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 687030599962562,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 729612036480518
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 970625220105279,
+					"parameters": {
+						"key": 16
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 574667429245918,
+					"parameters": {
+						"animation": "\"Idle to Run\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 420309940206423
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "MainCharacter",
+					"sid": 589679608902994,
+					"parameters": {
+						"animation": "\"Idle to Run\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 377505752089891,
+					"parameters": {
+						"animation": "\"Run\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 712786682139298
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 102166977403341,
+					"parameters": {
+						"key": 16
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 611350519771637,
+					"parameters": {
+						"animation": "\"Run to Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 377388803817689
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 271919005705660
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 250861262464541,
+					"parameters": {
+						"key": 17
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "MainCharacter",
+					"sid": 307949126236624,
+					"parameters": {
+						"animation": "\"Run\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 882490177764531,
+					"parameters": {
+						"animation": "\"Dash Attack\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 483076923194440
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-jump",
+					"objectClass": "MainCharacter",
+					"sid": 374301743016253,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 367118880923942,
+					"parameters": {
+						"animation": "\"Idle to Jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 558106430006512
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "MainCharacter",
+					"sid": 628043370337114,
+					"parameters": {
+						"animation": "\"Idle to Jump\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 471785748413531,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 138209964236070
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fall",
+					"objectClass": "MainCharacter",
+					"sid": 829281555441004,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 193985854025695,
+					"parameters": {
+						"animation": "\"Jump to Fall\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 521652230745941
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "MainCharacter",
+					"sid": 814813674274582,
+					"parameters": {
+						"animation": "\"Jump to Fall\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 603687139552221,
+					"parameters": {
+						"animation": "\"Fall\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 762001498178633
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "MainCharacter",
+					"sid": 150347249490283,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 632682725069679,
+					"parameters": {
+						"animation": "\"Fall to Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 748848940859890
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 121363845209116,
+					"parameters": {
+						"key": 17
+					}
+				},
+				{
+					"id": "is-jumping",
+					"objectClass": "MainCharacter",
+					"sid": 730905239982843,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 600981173683146,
+					"parameters": {
+						"animation": "\"Jump Attack\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 216289275249354
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "MainCharacter",
+					"sid": 187588276758730,
+					"parameters": {
+						"animation": "\"Fall to Idle\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 117995943989482,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 304768564255449
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 367211983525099,
+					"parameters": {
+						"key": 17
+					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "MainCharacter",
+					"sid": 234082789294004,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 390378615525018,
+					"parameters": {
+						"animation": "\"Attack 1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 125754091353761
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Mob",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-enabled",
+							"objectClass": "Mob",
+							"sid": 949582357718606,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Mob",
+							"sid": 511117214745975,
+							"parameters": {
+								"x": "500"
+							}
+						}
+					],
+					"sid": 859232613600870
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "MainCharacter",
+							"sid": 342022243247324,
+							"parameters": {
+								"comparison": 4,
+								"x-co-ordinate": "500"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Mob",
+							"sid": 886795964080654,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 885945898472148
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-x",
+							"objectClass": "MainCharacter",
+							"sid": 360675684480748,
+							"parameters": {
+								"comparison": 2,
+								"x-co-ordinate": "500"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Mob",
+							"sid": 836585498715262,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 249219337094057
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-jumping",
+							"objectClass": "MainCharacter",
+							"sid": 710875593276048,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Mob",
+							"sid": 570030981880617,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 179865556334417
+				}
+			],
+			"sid": 964802971750171
+		}
+	],
+	"sid": 269307257446027
+}
