@@ -2,6 +2,16 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "ReadyToAttack2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 181093549148032
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -482,22 +492,119 @@
 				{
 					"id": "is-on-floor",
 					"objectClass": "MainCharacter",
-					"sid": 234082789294004,
+					"sid": 596949047999303,
 					"behaviorType": "Platform"
+				}
+			],
+			"actions": [],
+			"sid": 125754091353761,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 912628375894903,
+							"parameters": {
+								"variable": "ReadyToAttack2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "MainCharacter",
+							"sid": 367643637960506,
+							"parameters": {
+								"animation": "\"Attack 2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 929014845720787
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 590151173952021
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "MainCharacter",
+							"sid": 415987270499754,
+							"parameters": {
+								"animation": "\"Attack 1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 984798624467633
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 761780360997420,
+					"parameters": {
+						"key": 17
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "MainCharacter",
+					"sid": 762692152605690,
+					"parameters": {
+						"animation": "\"Attack 1\""
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation",
-					"objectClass": "MainCharacter",
-					"sid": 390378615525018,
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 922511537486056,
 					"parameters": {
-						"animation": "\"Attack 1\"",
-						"from": "beginning"
+						"variable": "ReadyToAttack2",
+						"value": "true"
 					}
 				}
 			],
-			"sid": 125754091353761
+			"sid": 778170341495122
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-animation-playing",
+					"objectClass": "MainCharacter",
+					"sid": 808264078783852,
+					"parameters": {
+						"animation": "\"Idle\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 113450696198188,
+					"parameters": {
+						"variable": "ReadyToAttack2",
+						"value": "false"
+					}
+				}
+			],
+			"sid": 311990445973297
 		},
 		{
 			"eventType": "group",
@@ -603,6 +710,75 @@
 				}
 			],
 			"sid": 964802971750171
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Debug",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 997758697237306
+						}
+					],
+					"actions": [],
+					"sid": 756472738464986,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-boolean-eventvar",
+									"objectClass": "System",
+									"sid": 261838149915544,
+									"parameters": {
+										"variable": "ReadyToAttack2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Debug",
+									"sid": 329628463930376,
+									"parameters": {
+										"text": "\"Ready\""
+									}
+								}
+							],
+							"sid": 576889946842733
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 924310591624311
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "Debug",
+									"sid": 651036186740813,
+									"parameters": {
+										"text": "\"\""
+									}
+								}
+							],
+							"sid": 745710893177399
+						}
+					]
+				}
+			],
+			"sid": 126070628789348
 		}
 	],
 	"sid": 269307257446027
