@@ -1,0 +1,26 @@
+{
+	"name": "Wall",
+	"plugin-id": "TiledBg",
+	"sid": 880331079987966,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 126440658970934
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 916946,
+		"useCollisionPoly": true
+	}
+}

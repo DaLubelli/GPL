@@ -1,0 +1,57 @@
+{
+	"name": "GreenKey",
+	"plugin-id": "Sprite",
+	"sid": 339578043912918,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 700,
+						"height": 740,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3267271,
+						"collisionPoly": {
+							"points": [
+								0.4614285714285714,
+								0.43648648648648647,
+								0.5,
+								0.3472972972972973,
+								0.83,
+								0.15945945945945947,
+								0.53,
+								0.5,
+								0.5042857142857143,
+								0.5310810810810811,
+								0.5,
+								0.8027027027027027,
+								0.15142857142857144,
+								0.8554054054054054,
+								0.40285714285714286,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 127605145346470,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

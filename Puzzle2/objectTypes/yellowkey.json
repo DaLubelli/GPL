@@ -1,0 +1,68 @@
+{
+	"name": "YellowKey",
+	"plugin-id": "Sprite",
+	"sid": 840171260150216,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 302739189367504
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 705269375874946
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 700,
+						"height": 740,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6863535,
+						"collisionPoly": {
+							"points": [
+								0.4614285714285714,
+								0.43648648648648647,
+								0.4599999999999999,
+								0.03378378378378377,
+								0.8414285714285713,
+								0.07297297297297298,
+								0.9128571428571414,
+								0.3810810810810811,
+								0.6528571428571422,
+								0.649999999999999,
+								0.3285714285714282,
+								0.9810810810810793,
+								0.06571428571428568,
+								0.8229729729729733,
+								0.40285714285714286,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 331134548210981,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
