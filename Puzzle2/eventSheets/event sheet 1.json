@@ -57,24 +57,30 @@
 					"parameters": {
 						"key": 37
 					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "MainCharacter",
+					"sid": 247853491509527,
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation",
+					"id": "set-mirrored",
 					"objectClass": "MainCharacter",
-					"sid": 411187839665773,
+					"sid": 690581789949588,
 					"parameters": {
-						"animation": "\"Turn\"",
-						"from": "beginning"
+						"state": "mirrored"
 					}
 				},
 				{
-					"id": "set-mirrored",
+					"id": "set-animation",
 					"objectClass": "MainCharacter",
-					"sid": 478156636788292,
+					"sid": 255965963859420,
 					"parameters": {
-						"state": "mirrored"
+						"animation": "\"Turn 2\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -90,24 +96,29 @@
 					"parameters": {
 						"key": 39
 					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "MainCharacter",
+					"sid": 263723880121277
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation",
+					"id": "set-mirrored",
 					"objectClass": "MainCharacter",
-					"sid": 863068261283315,
+					"sid": 684945108648755,
 					"parameters": {
-						"animation": "\"Turn 2\"",
-						"from": "beginning"
+						"state": "not-mirrored"
 					}
 				},
 				{
-					"id": "set-mirrored",
+					"id": "set-animation",
 					"objectClass": "MainCharacter",
-					"sid": 989047505960165,
+					"sid": 372280788638771,
 					"parameters": {
-						"state": "not-mirrored"
+						"animation": "\"Turn 2\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -119,32 +130,30 @@
 				{
 					"id": "on-animation-finished",
 					"objectClass": "MainCharacter",
-					"sid": 171276182919254,
+					"sid": 573437617683407,
 					"parameters": {
-						"animation": "\"Turn\""
+						"animation": "\"Turn 2\""
 					}
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "MainCharacter",
+					"sid": 649144075612550,
+					"behaviorType": "Platform"
 				}
 			],
 			"actions": [
 				{
-					"id": "set-mirrored",
-					"objectClass": "MainCharacter",
-					"sid": 768866919086375,
-					"parameters": {
-						"state": "mirrored"
-					}
-				},
-				{
 					"id": "set-animation",
 					"objectClass": "MainCharacter",
-					"sid": 821310647200092,
+					"sid": 601354650001731,
 					"parameters": {
-						"animation": "\"Idle\"",
+						"animation": "\"Walk\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 782196721446014
+			"sid": 729612036480518
 		},
 		{
 			"eventType": "block",
@@ -152,32 +161,31 @@
 				{
 					"id": "on-animation-finished",
 					"objectClass": "MainCharacter",
-					"sid": 573437617683407,
+					"sid": 942892716528241,
 					"parameters": {
 						"animation": "\"Turn 2\""
 					}
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "MainCharacter",
+					"sid": 490787333648774,
+					"behaviorType": "Platform",
+					"isInverted": true
 				}
 			],
 			"actions": [
 				{
-					"id": "set-mirrored",
-					"objectClass": "MainCharacter",
-					"sid": 459055931967541,
-					"parameters": {
-						"state": "not-mirrored"
-					}
-				},
-				{
 					"id": "set-animation",
 					"objectClass": "MainCharacter",
-					"sid": 687030599962562,
+					"sid": 605977994976137,
 					"parameters": {
 						"animation": "\"Idle\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 729612036480518
+			"sid": 744017267720227
 		},
 		{
 			"eventType": "block",
@@ -416,40 +424,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 121363845209116,
-					"parameters": {
-						"key": 17
-					}
-				},
-				{
-					"id": "is-jumping",
-					"objectClass": "MainCharacter",
-					"sid": 730905239982843,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "MainCharacter",
-					"sid": 600981173683146,
-					"parameters": {
-						"animation": "\"Jump Attack\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 216289275249354
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-animation-finished",
 					"objectClass": "MainCharacter",
-					"sid": 187588276758730,
+					"sid": 166548558319256,
 					"parameters": {
 						"animation": "\"Fall to Idle\""
 					}
@@ -459,14 +436,14 @@
 				{
 					"id": "set-animation",
 					"objectClass": "MainCharacter",
-					"sid": 117995943989482,
+					"sid": 463681838797543,
 					"parameters": {
 						"animation": "\"Idle\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 304768564255449
+			"sid": 766261939819972
 		},
 		{
 			"eventType": "block",
@@ -498,6 +475,38 @@
 				}
 			],
 			"sid": 125754091353761
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 833281099264101,
+					"parameters": {
+						"key": 17
+					}
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "MainCharacter",
+					"sid": 227875230508450,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "MainCharacter",
+					"sid": 165585761055793,
+					"parameters": {
+						"animation": "\"Jump Attack\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 535484774501633
 		},
 		{
 			"eventType": "group",
